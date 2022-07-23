@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: '16.x'
           cache: 'npm'
-          cache-dependency-path: 'MyResumeLambda\hello-world\package-lock.json'
+          cache-dependency-path: 'MyResumeLambda/hello-world/package-lock.json'
