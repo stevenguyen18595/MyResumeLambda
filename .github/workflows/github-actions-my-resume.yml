@@ -1,5 +1,7 @@
 name: GitHub Actions Demo
-on: [push]
+on: 
+  push:
+    branches: [ master ]
 
 jobs:
   Build:
@@ -14,6 +16,7 @@ jobs:
           node-version: '16.x'
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
+
       - name: Configure AWS credentials
         id: creds
         uses: aws-actions/configure-aws-credentials@v1
