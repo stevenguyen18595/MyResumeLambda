@@ -58,3 +58,17 @@ jobs:
       - name: Run unit tests
         run: |
           npm test
+
+     - name: Install zip
+        if: github.ref == 'refs/heads/master'
+        uses: montudor/action-zip@v1
+
+      - name: Zip build artifact
+        run: zip -qq -r build.zip .aws-sam
+        if: github.ref == 'refs/heads/master'
+
+      - uses: actions/upload-artifact@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          name: build-artifact
+          path: build.zip
