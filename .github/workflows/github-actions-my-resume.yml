@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: '16.x'
           cache: 'npm'
-          cache-dependency-path: 'MyResumeLambda/hello-world/package-lock.json'
+          cache-dependency-path: 'hello-world\package-lock.json'
       - name: Configure AWS credentials
         id: creds
         uses: aws-actions/configure-aws-credentials@v1
