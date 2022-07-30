@@ -13,7 +13,7 @@ import { MyResumeDto } from '../DTO/MyResumeDto';
 
 export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
     let response: APIGatewayProxyResult;
-    let testObject = createMyResumeObject();
+    let testObject: MyResumeDto= createMyResumeObject();
     console.log(testObject);
     try {
 
