@@ -1,0 +1,119 @@
+{
+    "education": [
+      {
+        "educationId": 1,
+        "educationName": "University Of Queensland",
+        "major": "Bachelor of Software Engineering",
+        "timeStarted": "Feb-2016",
+        "timeEnd": "Feb-2019"
+      },
+      {
+        "educationId": 2,
+        "educationName": "Queensland University Of Technology",
+        "major": "Master of Business",
+        "timeStarted": "July-2019",
+        "timeEnd": "July-2021"
+      },
+      {
+        "educationId": 3,
+        "educationName": "Performance Education",
+        "major": "Profesional Year",
+        "timeStarted": "April-2022",
+        "timeEnd": "April-2023"
+      }
+    ],
+    "employmentHistory": [
+      {
+        "employmentId": 1,
+        "companyName": "Patient Zero Pty Ltd",
+        "position": "Junior Software Developer",
+        "jobDescription": "As a Developer, being part of a cross functional Scrum team that delivers working software for clients that assists them solve real business problems. At Patient Zero we employ our Way of Working, created through research of best practice and hard-won experience to application development, to successfully deliver hundreds of working applications for customers.",
+        "timeStarted": "Jan 2022",
+        "timeEnd": "Present"
+      },
+      {
+        "employmentId": 2,
+        "companyName": "Insurebot Pty Ltd",
+        "position": "Junior Software Developer",
+        "jobDescription": "As a Developer, working in a cross functional team to develop an automation project named InsureBot to obtain quotes from multiple insurers and provide brokers with those quotes (moto insured quote, landlord insured quote). ",
+        "timeStarted": "Aug 2021",
+        "timeEnd": "Jan 2022"
+      },
+      {
+        "employmentId": 3,
+        "companyName": "FreeLancer",
+        "position": "Junior Software Developer",
+        "jobDescription": "Develop web applications for customers who want to build small shopping websites, using Bootstrap, Bulma, Python/Flask.",
+        "timeStarted": "May 2019",
+        "timeEnd": "Aug 2021"
+      }
+    ],
+    "technicalSkill": [
+      {
+        "technicalSkillId": 1,
+        "skillSetName": "FrontEnd",
+        "techName": [
+          "Html, CSS, Bulma, Bootstrap (8/10)",
+          "Javascript (6/10)",
+          "Angular, Vue, React (5/10)"
+        ]
+      },
+      {
+        "technicalSkillId": 2,
+        "skillSetName": "Backend",
+        "techName": [
+          "Python/Flask",
+          "PHP/Laravel",
+          "Java/Spring Boot",
+          "C#/.NET",
+          "C++"
+        ]
+      },
+      {
+        "technicalSkillId": 3,
+        "skillSetName": "Database",
+        "techName": [
+          "SQL: MySQL, PostgreSQL, SQLite",
+          "NOSQL: DynamoDB, MongoDB"
+        ]
+      },
+      {
+        "technicalSkillId": 4,
+        "skillSetName": "Project Management",
+        "techName": [
+          "Azure Devops",
+          "Jira"
+        ]
+      },
+      {
+        "technicalSkillId": 5,
+        "skillSetName": "Code Repository",
+        "techName": [
+          "Aws Codecommit",
+          "Azure Repository",
+          "Github"
+        ]
+      },
+      {
+        "technicalSkillId": 6,
+        "skillSetName": "Code Editor",
+        "techName": [
+          "Atoms",
+          "VsCode",
+          "Visual Studio 2019 / 2022",
+          "Intelij",
+          "Eclipse/Netbeans",
+          "Pydev"
+        ]
+      },
+      {
+        "technicalSkillId": 7,
+        "skillSetName": "Version Control",
+        "techName": [
+          "Git",
+          "Source Tree"
+        ]
+      }
+    ]
+ 
+}
