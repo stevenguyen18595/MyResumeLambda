@@ -98,10 +98,11 @@ jobs:
             aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws-region: ${{ secrets.AWS_REGION }}
         
-        - name: Create bucket in S3
-          uses: aitorres/aws-s3-create-bucket@v1.2.0
-          with:
-            bucket-name: 'my-resume-s3-bucket'
+        - name: Create S3 Bucket
+          run: |
+            # Create S3 Bucket to store code
+            aws s3api head-bucket --bucket my-resume-s3-bucket 2>/dev/null \
+            || aws s3 mb s3://my-resume-s3-bucket \ 
 
         - name: Deploy Lambda
           working-directory: artifact
@@ -109,5 +110,5 @@ jobs:
             # Run SAM Deploy
             sam deploy --template-file .aws-sam/build/template.yaml \
               --stack-name ${{ needs.Build.outputs.env-name }} \
-              --s3-bucket 'my-resume-s3-bucket' \
+              --s3-bucket my-resume-s3-bucket \
               --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM
