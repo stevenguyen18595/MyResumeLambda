@@ -14,14 +14,13 @@ import { MyResumeDto } from '../DTO/MyResumeDto';
 export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
     let response: APIGatewayProxyResult;
     
-    let testObject: MyResumeDto= createMyResumeObject();
-    console.log(testObject);
+    let myResume: MyResumeDto= createMyResumeObject();
     try {
 
         response = {
             statusCode: 200,
             body: JSON.stringify({
-                message: 'hello world',
+                myResume
             }),
         };
     } catch (err) {
