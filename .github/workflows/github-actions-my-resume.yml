@@ -102,7 +102,7 @@ jobs:
           run: |
             # Create S3 Bucket to store code
             aws s3api head-bucket --bucket "${{ needs.Build.outputs.env-name.lowercase }}" 2>/dev/null \
-            || aws s3 mb s3://${{ needs.Build.outputs.env-name.lowercase }}
+            || aws s3 mb s3://${{ needs.Build.outputs.env-name.lowercase() }}
 
         - name: Deploy Lambda
           working-directory: artifact
