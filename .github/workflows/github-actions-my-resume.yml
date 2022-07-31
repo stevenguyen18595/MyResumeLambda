@@ -99,6 +99,9 @@ jobs:
             aws-region: ${{ secrets.AWS_REGION }}
 
         - name: Create S3 Bucket
+          uses: ASzc/change-string-case-action@v1
+          with:
+            string: ${{ needs.Build.outputs }}
           run: |
             # Create S3 Bucket to store code
             echo ${{needs.Build.outputs}} \ 
