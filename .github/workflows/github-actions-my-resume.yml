@@ -101,7 +101,7 @@ jobs:
         - name: Create S3 Bucket
           run: |
             # Create S3 Bucket to store code
-            aws s3api head-bucket --bucket my-resume-s3-bucket 2>/dev/null \
+            aws s3api head-bucket --bucket 'my-resume-s3-bucket' 2>/dev/null \
             || aws s3 mb s3://my-resume-s3-bucket \ 
 
         - name: Deploy Lambda
@@ -110,5 +110,5 @@ jobs:
             # Run SAM Deploy
             sam deploy --template-file .aws-sam/build/template.yaml \
               --stack-name ${{ needs.Build.outputs.env-name }} \
-              --s3-bucket my-resume-s3-bucket \
+              --s3-bucket 'my-resume-s3-bucket' \
               --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM
