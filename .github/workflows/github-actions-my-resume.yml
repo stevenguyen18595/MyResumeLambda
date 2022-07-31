@@ -101,8 +101,8 @@ jobs:
         - name: Create S3 Bucket
           run: |
             # Create S3 Bucket to store code
-            aws s3api head-bucket --bucket 'my-resume-s3-bucket' 2>/dev/null \
-            || aws s3 mb s3://my-resume-s3-bucket \ 
+            aws s3api head-bucket --bucket my-resume-s3-bucket \
+            || aws s3 mb s3://my-resume-s3-bucket 
 
         - name: Deploy Lambda
           working-directory: artifact
